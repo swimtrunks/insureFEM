@@ -113,8 +113,18 @@ a:hover {
   position: relative;
   background-color: #2d2640;
   color: white;
-  width: 1920px;
+  width: auto;
   height: 800px;
+}
+
+.hero > span {
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  height: 2px;
+  top: 140px;
+  left: 220px;
 }
 
 .hero__image {
@@ -143,9 +153,9 @@ a:hover {
   position: absolute;
   top: 237px;
   left: 220px;
-  font-size: 90px;
+  font-size: 5.625rem;
   font-family: "DM Serif Display",sans-serif;
-  line-height: 80px;
+  line-height: 5rem;
 }
 
 .hero__text {
@@ -154,7 +164,7 @@ a:hover {
   height: 98px;
   top: 445px;
   left: 220px;
-  font-size: 21px;
+  font-size: 1.313rem;
   line-height: 32px;
 }
 
@@ -163,6 +173,8 @@ a:hover {
   position: absolute;
   color: white;
   font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
   border-style: solid;
   border-color: white;
   padding: 13px 34px;
@@ -174,5 +186,104 @@ a:hover {
   background-color: white;
   color: #2d2640;
   cursor: pointer;
+}
+
+.midBlock {
+  padding-top: 405px;
+  padding-left: 220px;
+  padding-right: 220px;
+}
+
+.midBlock > span {
+  display: block;
+  background-color: #767378;
+  width: 200px;
+  height: 2px;
+  top: 140px;
+  left: 220px;
+}
+
+.midBlock__title {
+  padding-top: 98px;
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 5.625rem;
+}
+
+.midBlock__points {
+  padding-top: 138px;
+}
+
+.midBlock__points > div > img {
+  width: 7.25rem;
+}
+
+.midBlock__points > div:not(:last-child) {
+  padding-right: 72px;
+}
+
+.midBlock > section div {
+  line-height: 32px;
+  font-size: 1.09rem;
+  color: #95a9c6;
+}
+
+.midBlock__bottom {
+  position: relative;
+  display: block;
+  margin-top: 215px;
+  width: 1480px;
+  height: 335px;
+  background-color: #2b272f;
+}
+
+.midBlock__bottom > div {
+  position: relative;
+  top: 90px;
+  left: 109px;
+  line-height: 5rem;
+  color: white;
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 5.75rem;
+}
+
+.midBlock__bottom > a {
+  position: absolute;
+  top: 140px;
+  right: 106px;
+  color: white;
+  border: 2px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-style: solid;
+  border-color: white;
+  padding: 10px 24px;
+  margin-left: 30px;
+}
+
+.midBlock__bottom > a:hover {
+  background-color: white;
+  color: #2b272f;
+}
+
+.midBlock__bottom > img {
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  right: 2px;
+}
+
+.flexTitle {
+  font-family: "DM Serif Display", sans-serif;
+  color: #2d2640;
+  font-size: 28px;
+  display: block;
+  padding-top: 58px;
+}
+
+footer {
+  height: 524px;
+  background-color: #fafafa;
+  margin-top: 202px;
 }
 /*# sourceMappingURL=style.css.map */

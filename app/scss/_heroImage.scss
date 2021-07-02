@@ -2,8 +2,19 @@
     position:relative;
     background-color: $darkViolet;
     color:white;
-    width:1920px;
+    width:auto;
     height:800px;
+
+    >span{
+        display: block;
+        position:absolute;
+        background-color: white;
+        width: 200px;
+        height:2px;
+        top: 140px;
+        left:220px;
+
+    }
 
     &__image{
         width: 720px;
@@ -30,9 +41,9 @@
         position: absolute;
         top:237px;
         left:220px;
-        font-size: 90px;
+        font-size: $fontLg;
         font-family: "DM Serif Display",sans-serif;
-        line-height: 80px;
+        line-height: $lineHtLg;
     }
     &__text{
         position: absolute;
@@ -40,7 +51,7 @@
         height:98px;
         top:445px;
         left:220px;
-        font-size: 21px;
+        font-size: $fontMd;
         line-height: 32px;
     }
     &__ctaHero{
@@ -48,6 +59,8 @@
         position: absolute;
         color: white;
         font-weight: 700;
+        font-size:14px;
+        letter-spacing: 2px;
         border-style: solid;
         border-color: white;
         padding: 13px 34px;
@@ -60,4 +73,5 @@
             cursor: pointer;
         }
     }
+    
 }

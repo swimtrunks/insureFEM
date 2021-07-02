@@ -1,0 +1,92 @@
+.midBlock{
+    padding-top:405px;
+    padding-left:220px;
+    padding-right:220px;
+
+    >span{
+        display: block;
+        background-color: $darkGrayishViolet;
+        width: 200px;
+        height:2px;
+        top: 140px;
+        left:220px;
+    }
+    &__title{
+        padding-top: 98px;
+        font-family: "DM Serif Display", sans-serif;
+        font-size: $fontLg;
+    }
+    &__points{
+        padding-top: 138px;
+
+        >div{
+            >img{
+                width: $iconMd;
+                
+            }
+
+            &:not(:last-child){
+                padding-right: 72px;
+            }
+        }
+        
+
+    }
+    >section div{
+        line-height: 32px;
+        font-size: $fontSm;
+        color: $grayishBlue
+    }
+    &__bottom{
+        position: relative;
+        display: block;
+        margin-top: 215px; 
+        width: 1480px;
+        height:335px;
+        background-color: $veryDarkViolet;
+
+        >div{
+            position: relative;
+            top: 90px;
+            left:109px;
+            line-height: $lineHtLg;
+            color:white;
+            font-family: "DM Serif Display", sans-serif;
+            font-size: $fontXM
+        }
+        >a{
+            position:absolute;
+            top: 140px;
+            right:106px;
+            color: white;
+            border: 2px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            border-style: solid;
+            border-color: white;
+            padding: 10px 24px;
+            margin-left: 30px;
+
+            &:hover{
+                background-color: white;
+                color:$veryDarkViolet;
+            }
+        }
+        >img{
+            position: absolute;
+            height: 100%;
+            width: 35%;
+            right:2px;
+        }
+    }
+
+}
+
+.flexTitle{
+    font-family: "DM Serif Display", sans-serif;
+    color: $darkViolet;
+    font-size: 28px;
+    display: block;
+    padding-top: 58px;
+}
