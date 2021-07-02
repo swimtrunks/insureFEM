@@ -1,0 +1,60 @@
+.header {
+    nav{
+        font-size: 14px;
+        padding:27px 224px;
+
+    }
+
+    &__menu{
+        display: none; //hidden for now
+        border: 3px;
+        border-style: solid;
+        border-color: $darkViolet;
+        padding-top: 10px;
+        padding-bottom:10px;
+        padding-right:8px;
+        padding-left: 8px;
+
+        > span{
+             display: block;
+             width: 16px;
+             height: 2px;
+             background-color: $darkViolet;
+
+             &:not(:last-child){
+                 margin-bottom: 3px;
+             }
+        }
+    }
+
+    &__links{
+        display: inline-block;
+        margin:0px;
+        padding:0px;
+        letter-spacing: 2px;
+        
+        >a{
+            padding: 0px 10px;
+        }
+        
+        >a:last-child{
+            color: $darkViolet;
+            border: 2px;
+            font-weight: 700;
+            border-style: solid;
+            border-color: black;
+            padding: 10px 24px;
+            margin-left: 30px;
+
+            &:hover{
+                background-color: $darkViolet;
+                color: white;
+            }
+        }
+    }
+    &__logo{
+        width:150px;
+        height: 25px;
+    }
+}
+

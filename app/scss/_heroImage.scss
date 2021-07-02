@@ -1,0 +1,63 @@
+.hero{
+    position:relative;
+    background-color: $darkViolet;
+    color:white;
+    width:1920px;
+    height:800px;
+
+    &__image{
+        width: 720px;
+        height: 866px;
+        position: absolute;
+        top:140px;
+        left:980px;
+    }
+
+    &__patternLeft{
+        position: absolute;
+        top: 570px;
+        width: 260px;
+        height:auto
+    }
+    &__patternRight{
+        position: absolute;
+        width: 520px;
+        height: auto;
+        left:1390px;
+
+    }
+    &__title{
+        position: absolute;
+        top:237px;
+        left:220px;
+        font-size: 90px;
+        font-family: "DM Serif Display",sans-serif;
+        line-height: 80px;
+    }
+    &__text{
+        position: absolute;
+        width: 717px;
+        height:98px;
+        top:445px;
+        left:220px;
+        font-size: 21px;
+        line-height: 32px;
+    }
+    &__ctaHero{
+        border: 2px;
+        position: absolute;
+        color: white;
+        font-weight: 700;
+        border-style: solid;
+        border-color: white;
+        padding: 13px 34px;
+        top: 575px;
+        left: 220px;
+
+        &:hover{
+            background-color:white;
+            color:$darkViolet;
+            cursor: pointer;
+        }
+    }
+}
