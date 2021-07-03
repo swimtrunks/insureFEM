@@ -13,7 +13,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="dist/css/style.css">
 
-
   <title>Frontend Mentor | Insure landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -56,6 +55,11 @@
     <img src="images/bg-pattern-intro-right-desktop.svg" class="hero__patternRight">
     <img src="images/bg-pattern-intro-left-desktop.svg" class="hero__patternLeft">
 
+    <div class="hero__mobileImages flex flex-mobile">
+      <img src="/images/image-intro-mobile.jpg" alt="" id="mobileHero">
+      <img src="/images/bg-pattern-intro-left-mobile.svg" alt="" id="mobile-LeftPattern">
+      <img src="/images/bg-pattern-intro-right-mobile.svg" alt="" id="mobile-RightPattern">
+    </div>
     <div class="hero__title">
       Humanizing <br />your insurance.
     </div>
@@ -79,6 +83,8 @@
       We’re different
     </div>
 
+    <!--Desktop middle body stylings-->
+
     <section class="flex flex-jc-sb midBlock__points">
       <div>
         <img src="images/icon-snappy-process.svg"><br>
@@ -100,70 +106,101 @@
       </div>
     </section>
 
+    <!--Mobile middle body stylings-->
+
+    <section class="flex-mobile midBlock__mobile">
+      <div>
+        <img src="images/icon-snappy-process.svg"><br>
+        <span class="flexTitle">Snappy Process</span><br>
+        Our application process can be completed in minutes, not hours. Don’t get
+        stuck filling in tedious forms.
+      </div>
+      <div>
+        <img src="images/icon-affordable-prices.svg"></br>
+        <span class="flexTitle">Affordable Prices</span><br>
+        We don’t want you worrying about high monthly costs. Our prices may be low,
+        but we still offer the best coverage possible.
+      </div>
+      <div>
+        <img src="images/icon-people-first.svg"><br>
+        <span class="flexTitle">People First</span><br>
+        Our plans aren’t full of conditions and clauses to prevent payouts. We make
+        sure you’re covered when you need it.
+      </div>
+    </section>
+
     <div class="midBlock__bottom">
-      <img src="images/bg-pattern-how-we-work-desktop.svg">
+      <img src="images/bg-pattern-how-we-work-desktop.svg" id="desktop-patternBottom">
+      <img src="images/bg-pattern-how-we-work-mobile.svg" id="mobile-patternBottom">
+
       <div>
         Find out more <br>
         about how we work
       </div>
       <a href="#">HOW WE WORK</a>
     </div>
-
+    <a href="#" id="mobile-ctaBottom">HOW WE WORK</a>
   </section>
 
-  <footer class="flex flex-jc-sb">
+  <footer>
+    <img src="/images/bg-pattern-footer-desktop.svg" id="footerPattern">
+    <img src="/images/logo.svg" id="footerLogo">
 
-    <div>
-      <div>
-        Our company
-      </div>
+    <span></span>
 
-      How we work<br>
-      Why Insure?<br>
-      View plans<br>
-      Reviews<br>
+    <div class="flex" id="socialLogo">
+      <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
+      <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
+      <a href="#"><img src="images/icon-pinterest.svg" alt=""></a>
+      <a href="#"><img src="images/icon-instagram.svg" alt=""></a>
     </div>
 
-    <div>
-      <div>
-        Help me
+    <section class="flex flex-jc-sb">
+      <div class="footerSection">
+        <div class="footerTitle">
+          Our company
+        </div>
+        <section>
+          <a href="#">How we work</a><br>
+          <a href="#">Why Insure?</a><br>
+          <a href="#">View plans</a><br>
+          <a href="#">Reviews</a><br>
+        </section>
       </div>
 
-      FAQ<br>
-      Terms of use<br>
-      Privacy policy<br>
-      Cookies<br>
-    </div>
-    <div>
-      <div>
-        Contact
+      <div class="footerSection">
+        <div class="footerTitle">
+          Help me
+        </div>
+        <section>
+          <a href="#">FAQ</a><br>
+          <a href="#">Terms of use</a><br>
+          <a href="#">Privacy policy</a><br>
+          <a href="#">Cookies</a><br>
+        </section>
       </div>
-
-      Sales<br>
-      Support<br>
-      Live chat<br>
-    </div>
-    <div>
-      <div>
-        Others
+      <div class="footerSection">
+        <div class="footerTitle">
+          Contact
+        </div>
+        <section>
+          <a href="#">Sales</a><br>
+          <a href="#">Support</a><br>
+          <a href="#">Live chat</a><br>
+        </section>
       </div>
-      
-      Careers<br>
-      Press<br>
-      Licenses<br>
-    </div>
-
+      <div class="footerSection">
+        <div class="footerTitle">
+          Others
+        </div>
+        <section>
+          <a href="#">Careers</a><br>
+          <a href="#">Press</a><br>
+          <a href="#">Licenses</a><br>
+        </section>
+      </div>
+    </section>
   </footer>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -171,6 +208,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Malcolm P.</a>.
   </div>
+
+  <script type="text/javascript" src="./app/js/script.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,69 @@
 footer{
+    position: relative;
     height:524px;
     background-color: $veryLightGray;
     margin-top:202px;
+    font-size: $fontXS;
+    font-weight: bold;
+    letter-spacing: $letterSpc;
+    text-transform:uppercase;
+    
+    >section{
+        width:1235px;
+        height: 208px;
+        margin-left: 220px;
+        
+    }
+    >span{
+        display: block;
+        position: absolute;
+        background-color: $darkGrayishViolet;
+        width: 1455px;
+        height:2px;
+        top: 160px;
+        left:220px;
+    }
+}
+
+.footerTitle{
+    color: $darkGrayishViolet;
+    padding-bottom: 13px;
+}
+
+.footerSection{
+    line-height: 35px;
+    padding-top: 220px;
+    z-index: 2;
+    >section a{
+        color: $veryDarkViolet;
+    }
+    >section a:hover{
+        text-decoration: underline;
+    }
+}
+#footerPattern{
+    position: absolute;
+    width: 705px;
+}
+#footerLogo{
+    position: absolute;
+    left:220px;
+    top:85px;
+    width: $logoSz; 
+}
+#socialLogo{
+    position: absolute;
+    right: 220px;
+    top: 85px;
+    
+    >a{
+        display: block;
+        
+        width: 40px;
+        height: auto;
+    }
+    >a:hover{
+        cursor: pointer;
+        filter: brightness(50%);
+    }
 }

@@ -4,6 +4,7 @@
         padding:27px 224px;
 
     }
+    
 
     &__menu{
         display: none; //hidden for now
@@ -53,8 +54,39 @@
         }
     }
     &__logo{
-        width:150px;
-        height: 25px;
+        width:$logoSz;  
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+    .header{
+
+        >nav{
+            padding:30px 22px;
+            
+        }
+
+        &__menu{
+            display: block ;
+            margin:0;
+            border: 3px;
+            border-style: solid;
+            border-color: $darkViolet;
+            padding-top: 10px;
+            padding-bottom:10px;
+            padding-right:8px;
+            padding-left: 8px;
+        }
+        
+        &__links{
+            display:none;
+        }
+        &__logo{
+            width:112px;
+        }
+    }
+    #mobileHero{
+        width: 100%;
     }
 }
 

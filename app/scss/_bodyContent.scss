@@ -8,8 +8,7 @@
         background-color: $darkGrayishViolet;
         width: 200px;
         height:2px;
-        top: 140px;
-        left:220px;
+       
     }
     &__title{
         padding-top: 98px;
@@ -22,15 +21,16 @@
         >div{
             >img{
                 width: $iconMd;
-                
+                margin: 0;
             }
 
             &:not(:last-child){
                 padding-right: 72px;
             }
         }
-        
-
+    }
+    &__mobile{
+        display: none;
     }
     >section div{
         line-height: 32px;
@@ -83,10 +83,102 @@
 
 }
 
+#mobile-ctaBottom{
+  display: none;
+}
+
+#mobile-patternBottom{
+   display: none;
+}
+
+
 .flexTitle{
     font-family: "DM Serif Display", sans-serif;
     color: $darkViolet;
     font-size: 28px;
     display: block;
-    padding-top: 58px;
+    padding-top: 45px;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 400px){
+    .midBlock{
+        padding:0;
+        padding-top: 140px;
+
+        >span{
+            width: 150px;
+            margin:0px 112px 0px 112px;
+        }
+        &__points{
+            display: none;
+            
+        }
+        &__mobile{
+            padding-top:55px;
+            
+            text-align: center;
+            >div{
+                padding:0px 12px;
+
+                &:not(:last-child){
+                margin-bottom:62px;
+                }
+                >img{
+                    padding:0px;
+                }
+            }
+            
+        }
+        &__title{
+            font-size: 46.3px;
+            padding:0px;
+            margin: 57px 36px 0px 36px;
+        }
+        &__bottom{
+        
+            text-align: center;
+            width: 327px;
+            margin:148px 25px 141px 25px;
+            padding: 0px;
+
+            >div{
+                position: absolute;
+                top:70px;
+                left:4px;
+                right:4px;
+                line-height: 45px;
+                font-size: 38px;    
+                }
+                >a{
+                    display: none;
+            }
+            
+        }
+    }
+    .flexTitle{
+        padding-top: 25px;
+    }
+    #mobile-ctaBottom{
+        position: absolute;
+        top: 2700px;
+        right:100px;
+        color: white;
+        border: 2px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        border-style: solid;
+        border-color: white;
+        padding: 10px 24px;
+        margin-left: 30px;
+    }
+    #desktop-patternBottom{
+        display: none;
+    }
+    #mobile-patternBottom{
+        position: absolute;
+        width: 50%;
+        top:0;
+    }
+    
 }

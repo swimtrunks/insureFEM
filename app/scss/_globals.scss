@@ -3,6 +3,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
   
   *, *::before, *::after {
@@ -41,6 +42,9 @@ a:hover{
       
       &-ai-c {
         align-items: center;
+      }
+      &-mobile{
+        flex-direction: row;
       }
 }
   

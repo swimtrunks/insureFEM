@@ -15,7 +15,9 @@
         left:220px;
 
     }
-
+    &__mobileImages{
+        display: none;
+    }
     &__image{
         width: 720px;
         height: 866px;
@@ -74,4 +76,69 @@
         }
     }
     
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+   .hero{
+    display: flex;
+    justify-content: center;
+    height:955px;
+
+    >span{
+        display:none;
+    }
+        &__title{
+            all: initial;
+            position: absolute;
+            font-family: "DM Serif Display",sans-serif;
+            font-size:47px;
+            line-height: 53px;
+            color: white;
+            text-align: center;
+            top:545px;
+            padding-left: 2px;
+            padding-right: 2px;
+            
+        }
+        &__text{
+            position: absolute;
+            text-align: center;
+            text-justify: center;
+            font-size: 15px;
+            line-height: 26px;
+            width: 300px;
+            margin:12px;
+            top:653px;
+            left:25px;
+        }
+        &__mobileImages{
+            display: block;
+        }
+        &__image{
+            display: none;
+        }
+        &__patternRight{
+            display: none;
+        }
+        &__patternLeft{
+            display:none;
+        }
+        &__ctaHero{
+            position:absolute;
+            left:initial;
+            font-size: 12px;
+            padding: 12px 20px;
+            top: 820px;
+        }
+   }
+   #mobile-LeftPattern{
+        position: absolute;
+        left:0;
+        top:452px;
+   }
+   #mobile-RightPattern{
+        position: absolute;
+        left:250px;
+        top:800px;
+    }
 }
