@@ -1,4 +1,10 @@
 .header {
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
     nav{
         font-size: 14px;
         padding:27px 224px;
@@ -7,7 +13,7 @@
     
 
     &__menu{
-        display: none; //hidden for now
+        display: none; //hidden for mobile
         border: 3px;
         border-style: solid;
         border-color: $darkViolet;
@@ -60,9 +66,15 @@
 
 @media only screen and (min-width: 375px) and (max-width: 767px){
     .header{
+        position:sticky;
+    
 
+        width: initial;
         >nav{
+            
             padding:30px 22px;
+            height: 80px;
+            width: 375px;
             
         }
 

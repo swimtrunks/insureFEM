@@ -3,7 +3,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
+    max-width: 1970px;
   }
   
   *, *::before, *::after {
@@ -44,7 +44,7 @@ a:hover{
         align-items: center;
       }
       &-mobile{
-        flex-direction: row;
+        flex-direction: column;
       }
 }
   

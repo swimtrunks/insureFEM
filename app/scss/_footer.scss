@@ -67,3 +67,49 @@ footer{
         filter: brightness(50%);
     }
 }
+.mFooter{
+    display: none;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+    .mFooter{
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 1px;
+
+        >section{
+            position: relative;
+            top:-120px;
+            width:auto;
+            height: 208px;
+            margin: 50px;
+        }
+        >span{
+            position:relative;
+            border: solid 1px $darkGrayishViolet;
+            top: 3px;
+            margin:0px 40px;
+            
+        }
+        
+    }
+    #m-footerLogo{
+        position:relative;
+        top:-86px;
+        left:1px;
+        margin:0px 130px
+    }
+    .m-social{
+        position: relative;
+        top: -85px;
+        margin: 30px 115px;
+      
+    }
+    .footerSection{
+        padding-top: 20px;
+    }
+}

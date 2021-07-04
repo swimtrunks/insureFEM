@@ -23,7 +23,7 @@
         height: 866px;
         position: absolute;
         top:140px;
-        left:980px;
+        right:200px;
     }
 
     &__patternLeft{
@@ -34,9 +34,9 @@
     }
     &__patternRight{
         position: absolute;
-        width: 520px;
-        height: auto;
-        left:1390px;
+        width: 590px;
+        top:-14%;
+        right:-30px;
 
     }
     &__title{
@@ -77,6 +77,8 @@
     }
     
 }
+
+
 
 @media only screen and (min-width: 375px) and (max-width: 767px){
    .hero{

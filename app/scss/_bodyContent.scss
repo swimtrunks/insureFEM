@@ -41,7 +41,7 @@
         position: relative;
         display: block;
         margin-top: 215px; 
-        width: 1480px;
+        width: 1540px;
         height:335px;
         background-color: $veryDarkViolet;
 
@@ -114,8 +114,8 @@
             
         }
         &__mobile{
+            display: block;
             padding-top:55px;
-            
             text-align: center;
             >div{
                 padding:0px 12px;
@@ -159,6 +159,7 @@
         padding-top: 25px;
     }
     #mobile-ctaBottom{
+        display: block;
         position: absolute;
         top: 2700px;
         right:100px;
@@ -176,6 +177,7 @@
         display: none;
     }
     #mobile-patternBottom{
+        display:block;
         position: absolute;
         width: 50%;
         top:0;

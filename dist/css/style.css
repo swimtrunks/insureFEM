@@ -2,7 +2,7 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
+  max-width: 1970px;
 }
 
 *, *::before, *::after {
@@ -53,10 +53,19 @@ a:hover {
 }
 
 .flex-mobile {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .header nav {
@@ -117,8 +126,15 @@ a:hover {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
+  .header {
+    position: -webkit-sticky;
+    position: sticky;
+    width: initial;
+  }
   .header > nav {
     padding: 30px 22px;
+    height: 80px;
+    width: 375px;
   }
   .header__menu {
     display: block;
@@ -169,7 +185,7 @@ a:hover {
   height: 866px;
   position: absolute;
   top: 140px;
-  left: 980px;
+  right: 200px;
 }
 
 .hero__patternLeft {
@@ -181,9 +197,9 @@ a:hover {
 
 .hero__patternRight {
   position: absolute;
-  width: 520px;
-  height: auto;
-  left: 1390px;
+  width: 590px;
+  top: -14%;
+  right: -30px;
 }
 
 .hero__title {
@@ -338,7 +354,7 @@ a:hover {
   position: relative;
   display: block;
   margin-top: 215px;
-  width: 1480px;
+  width: 1540px;
   height: 335px;
   background-color: #2b272f;
 }
@@ -409,6 +425,7 @@ a:hover {
     display: none;
   }
   .midBlock__mobile {
+    display: block;
     padding-top: 55px;
     text-align: center;
   }
@@ -447,6 +464,7 @@ a:hover {
     padding-top: 25px;
   }
   #mobile-ctaBottom {
+    display: block;
     position: absolute;
     top: 2700px;
     right: 100px;
@@ -464,6 +482,7 @@ a:hover {
     display: none;
   }
   #mobile-patternBottom {
+    display: block;
     position: absolute;
     width: 50%;
     top: 0;
@@ -544,5 +563,53 @@ footer > span {
   cursor: pointer;
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
+}
+
+.mFooter {
+  display: none;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .mFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .mFooter > section {
+    position: relative;
+    top: -120px;
+    width: auto;
+    height: 208px;
+    margin: 50px;
+  }
+  .mFooter > span {
+    position: relative;
+    border: solid 1px #767378;
+    top: 3px;
+    margin: 0px 40px;
+  }
+  #m-footerLogo {
+    position: relative;
+    top: -86px;
+    left: 1px;
+    margin: 0px 130px;
+  }
+  .m-social {
+    position: relative;
+    top: -85px;
+    margin: 30px 115px;
+  }
+  .footerSection {
+    padding-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
