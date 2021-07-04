@@ -72,6 +72,9 @@ footer{
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px){
+    footer{
+        display: none;
+    }
     .mFooter{
         display: flex;
         flex-direction: column;
@@ -80,6 +83,7 @@ footer{
         font-weight: bold;
         font-size: 13px;
         letter-spacing: 1px;
+        
 
         >section{
             position: relative;
@@ -87,6 +91,7 @@ footer{
             width:auto;
             height: 208px;
             margin: 50px;
+            
         }
         >span{
             position:relative;

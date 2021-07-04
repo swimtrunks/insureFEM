@@ -59,7 +59,7 @@ a:hover {
           flex-direction: column;
 }
 
-.header {
+.deskheader {
   position: fixed;
   z-index: 1;
   background-color: white;
@@ -68,12 +68,12 @@ a:hover {
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.header nav {
+.deskheader nav {
   font-size: 14px;
   padding: 27px 224px;
 }
 
-.header__menu {
+.deskheader__menu {
   display: none;
   border: 3px;
   border-style: solid;
@@ -84,29 +84,35 @@ a:hover {
   padding-left: 8px;
 }
 
-.header__menu > span {
+.deskheader__menu > span {
   display: block;
   width: 16px;
   height: 2px;
   background-color: #2d2640;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
-.header__menu > span:not(:last-child) {
+.deskheader__menu > span:not(:last-child) {
   margin-bottom: 3px;
 }
 
-.header__links {
+.deskheader__links {
   display: inline-block;
   margin: 0px;
   padding: 0px;
   letter-spacing: 2px;
 }
 
-.header__links > a {
+.deskheader__links > a {
   padding: 0px 10px;
 }
 
-.header__links > a:last-child {
+.deskheader__links > a:last-child {
   color: #2d2640;
   border: 2px;
   font-weight: 700;
@@ -116,27 +122,26 @@ a:hover {
   margin-left: 30px;
 }
 
-.header__links > a:last-child:hover {
+.deskheader__links > a:last-child:hover {
   background-color: #2d2640;
   color: white;
 }
 
-.header__logo {
+.deskheader__logo {
   width: 9.375rem;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
-  .header {
-    position: -webkit-sticky;
-    position: sticky;
+  .deskheader {
     width: initial;
   }
-  .header > nav {
+  .deskheader > nav {
     padding: 30px 22px;
     height: 80px;
     width: 375px;
   }
-  .header__menu {
+  .deskheader__menu {
+    position: relative;
     display: block;
     margin: 0;
     border: 3px;
@@ -146,11 +151,16 @@ a:hover {
     padding-bottom: 10px;
     padding-right: 8px;
     padding-left: 8px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
   }
-  .header__links {
+  .deskheader__links {
     display: none;
   }
-  .header__logo {
+  .deskheader__logo {
     width: 112px;
   }
   #mobileHero {
@@ -243,6 +253,7 @@ a:hover {
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
   .hero {
+    top: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -347,7 +358,7 @@ a:hover {
 .midBlock > section div {
   line-height: 32px;
   font-size: 1.09rem;
-  color: #95a9c6;
+  color: #767378;
 }
 
 .midBlock__bottom {
@@ -415,7 +426,7 @@ a:hover {
 @media only screen and (min-width: 375px) and (max-width: 400px) {
   .midBlock {
     padding: 0;
-    padding-top: 140px;
+    padding-top: 220px;
   }
   .midBlock > span {
     width: 150px;
@@ -466,7 +477,7 @@ a:hover {
   #mobile-ctaBottom {
     display: block;
     position: absolute;
-    top: 2700px;
+    top: 2690px;
     right: 100px;
     color: white;
     border: 2px;
@@ -486,6 +497,18 @@ a:hover {
     position: absolute;
     width: 50%;
     top: 0;
+  }
+  .mobileOverlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    background-color: #2d2640;
+    width: 100%;
+    height: 100%;
+  }
+  .mobileOverlay > img {
+    position: relative;
+    bottom: 0px;
   }
 }
 
@@ -570,6 +593,9 @@ footer > span {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 767px) {
+  footer {
+    display: none;
+  }
   .mFooter {
     display: -webkit-box;
     display: -ms-flexbox;
