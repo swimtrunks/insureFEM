@@ -61,7 +61,7 @@ a:hover {
 
 .deskheader {
   position: fixed;
-  z-index: 1;
+  z-index: 9;
   background-color: white;
   width: 100%;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -501,14 +501,39 @@ a:hover {
   .mobileOverlay {
     display: none;
     position: fixed;
-    z-index: 9999;
+    z-index: 1;
     background-color: #2d2640;
     width: 100%;
     height: 100%;
   }
+  .mobileOverlay > div {
+    position: absolute;
+    padding: 0px 38px;
+    top: 107px;
+  }
+  .mobileOverlay > div > a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    padding: 20px;
+  }
+  .mobileOverlay > div > a:last-child {
+    border: 1px;
+    width: 300px;
+    font-weight: 700;
+    border-style: solid;
+    border-color: white;
+    margin-top: 20px;
+    padding: 10px 10px;
+  }
   .mobileOverlay > img {
-    position: relative;
+    position: absolute;
     bottom: 0px;
+  }
+  .active {
+    display: block;
   }
 }
 
