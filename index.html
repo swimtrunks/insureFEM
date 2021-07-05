@@ -15,33 +15,23 @@
 
   <title>Frontend Mentor | Insure landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
-  <header class="header">
+  <header class="deskheader">
     <nav class="flex flex-jc-sb flex-ai-c">
       <a href="#">
         <img src="images/logo.svg" class="header__logo">
       </a>
 
-      <div class="header__menu">
+      <div class="deskheader__menu" id="nav-icon4">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <div class="header__links">
+
+      <div class="deskheader__links">
         <a href="/">HOW WE WORK</a>
         <a href="/">BLOG</a>
         <a href="/">ACCOUNT</a>
@@ -50,7 +40,20 @@
     </nav>
   </header>
 
+
+  <container class="mobileOverlay" id="menu">
+    <div>
+      <a href="/">HOW WE WORK</a>
+      <a href="/">BLOG</a>
+      <a href="/">ACCOUNT</a>
+      <a href="/">VIEW PLANS</a>
+    </div>
+    <img src="/images/bg-pattern-mobile-nav.svg">
+  </container>
+
+
   <section class="hero">
+
     <span></span>
     <img src="images/image-intro-desktop.jpg" alt="family of four walking holding hands" class="hero__image">
     <img src="images/bg-pattern-intro-right-desktop.svg" alt="pattern on the right" class="hero__patternRight">
@@ -143,7 +146,7 @@
     <a href="#" id="mobile-ctaBottom">HOW WE WORK</a>
   </section>
 
-
+  <!--Desktop Footer-->
   <footer>
     <img src="/images/bg-pattern-footer-desktop.svg" alt="footer pattern" id="footerPattern">
     <img src="/images/logo.svg" alt="insure footer logo" id="footerLogo">
@@ -204,6 +207,7 @@
     </section>
   </footer>
 
+  <!--Mobile footer-->
   <container class="mFooter">
     <img src="/images/bg-pattern-footer-mobile.svg" alt="footer pattern" id="m-footerPattern">
     <img src="/images/logo.svg" alt="footer logo" class="header__logo" id="m-footerLogo">
@@ -264,6 +268,7 @@
     </section>
   </container>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="./app/js/script.js"></script>
 </body>
 
